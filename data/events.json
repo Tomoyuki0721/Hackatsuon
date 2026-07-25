@@ -1,13 +1,4 @@
 {
-  "updated": "2026-07-25T00:00:00+09:00",
-  "events": [
-    {
-      "title": "（サンプル）気仙沼みなとまつり",
-      "date_start": "2026-08-01",
-      "date_end": "2026-08-02",
-      "description": "これはサンプルデータです。config/sites.json にサイトを設定すると、毎週月曜に自動更新されます。",
-      "url": "https://www.kesennuma.or.jp/",
-      "source": "サンプル"
-    }
-  ]
+  "updated": "2026-07-25T15:52:35.263610+09:00",
+  "events": []
 }
