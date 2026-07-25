@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hackatsuon Starter</title>
+<style>
+  :root {
+    --ink: #1b2a3a;      /* 三陸の夜の海 */
+    --paper: #f6f4ef;    /* 帆布 */
+    --accent: #c8451f;   /* 大漁旗の朱 */
+    --wave: #2e6f8e;     /* 昼の海 */
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    min-height: 100svh;
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+  }
+  main { max-width: 34rem; text-align: center; }
+  .flag {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--paper);
+    font-weight: 700;
+    letter-spacing: 0.35em;
+    padding: 0.4rem 1.2rem 0.4rem 1.55rem;
+    margin-bottom: 2rem;
+  }
+  h1 {
+    font-size: clamp(1.8rem, 6vw, 2.6rem);
+    line-height: 1.4;
+    margin-bottom: 1.2rem;
+  }
+  h1 em {
+    font-style: normal;
+    color: var(--wave);
+    border-bottom: 4px solid var(--accent);
+  }
+  p { line-height: 1.9; color: #445; }
+  .hint {
+    margin-top: 2.5rem;
+    font-size: 0.85rem;
+    text-align: left;
+    background: #fff;
+    border-left: 4px solid var(--wave);
+    padding: 1rem 1.2rem;
+  }
+  code {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 0.15em 0.5em;
+    border-radius: 3px;
+    font-size: 0.9em;
+  }
+</style>
+</head>
+<body>
+<main>
+  <span class="flag">出港準備完了</span>
+  <h1>このページが見えたら、<br><em>デプロイ成功</em>です</h1>
+  <p>
+    ここは、あなたのアプリの出発点。<br>
+    このページを、あなたの作りたいものに書き換えていきましょう。
+  </p>
+  <div class="hint">
+    Claude Code にこう伝えてみてください:<br>
+    <code>index.html を◯◯なアプリに書き換えて</code>
+  </div>
+</main>
+</body>
+</html>
