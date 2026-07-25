@@ -21,7 +21,8 @@ SCRIPT_DIR = Path(__file__).parent
 ROOT_DIR = SCRIPT_DIR.parent
 CONFIG_PATH = ROOT_DIR / "config" / "sites.json"
 OUTPUT_PATH = ROOT_DIR / "data" / "events.json"
-LOOKAHEAD_DAYS = 60
+LOOKBACK_DAYS = 14   # 過去14日以内に投稿された記事を表示
+LOOKAHEAD_DAYS = 60  # 未来60日以内のイベントも表示
 
 # ── 依存ライブラリ（pip install requests beautifulsoup4 lxml feedparser python-dateutil）
 
@@ -169,7 +170,8 @@ def fetch_html(site: dict) -> list[dict]:
 
 def filter_upcoming(events: list[dict]) -> list[dict]:
     today = date.today()
-    cutoff = today + timedelta(days=LOOKAHEAD_DAYS)
+    oldest = today - timedelta(days=LOOKBACK_DAYS)   # 過去14日
+    cutoff = today + timedelta(days=LOOKAHEAD_DAYS)  # 未来60日
     result = []
     for ev in events:
         ds = ev.get("date_start")
@@ -178,7 +180,7 @@ def filter_upcoming(events: list[dict]) -> list[dict]:
             continue
         try:
             d = date.fromisoformat(ds)
-            if d >= today and d <= cutoff:
+            if oldest <= d <= cutoff:  # 過去14日〜未来60日の範囲
                 result.append(ev)
         except ValueError:
             result.append(ev)
@@ -265,6 +267,8 @@ def send_email(events: list[dict]) -> None:
     if not (user and password and to_addr):
         print("[INFO] メール送信設定なし（EMAIL_USER / EMAIL_PASS / EMAIL_TO が未設定）。スキップ。")
         return
+
+    print(f"[INFO] メール送信開始: {user} → {to_addr}")
 
     today = date.today()
     subject = f"【気仙沼イベント情報】{today.month}月{today.day}日 週のイベント（{len(events)}件）"
