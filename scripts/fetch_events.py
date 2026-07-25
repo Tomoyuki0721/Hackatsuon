@@ -21,7 +21,7 @@ SCRIPT_DIR = Path(__file__).parent
 ROOT_DIR = SCRIPT_DIR.parent
 CONFIG_PATH = ROOT_DIR / "config" / "sites.json"
 OUTPUT_PATH = ROOT_DIR / "data" / "events.json"
-LOOKBACK_DAYS = 14   # 過去14日以内に投稿された記事を表示
+LOOKBACK_DAYS = 30   # 過去30日以内に投稿された記事を表示
 LOOKAHEAD_DAYS = 60  # 未来60日以内のイベントも表示
 
 # ── 依存ライブラリ（pip install requests beautifulsoup4 lxml feedparser python-dateutil）
@@ -91,8 +91,15 @@ def parse_japanese_date(text: str) -> date | None:
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; KesennumaEventsBot/1.0)"}
 
 
+def match_keywords(text: str, keywords: list[str]) -> bool:
+    if not keywords:
+        return True
+    return any(kw in text for kw in keywords)
+
+
 def fetch_rss(site: dict) -> list[dict]:
     events = []
+    keywords = site.get("keywords", [])
     try:
         feed = feedparser.parse(site["url"])
         for entry in feed.entries:
@@ -108,8 +115,11 @@ def fetch_rss(site: dict) -> list[dict]:
             if hasattr(entry, "summary"):
                 summary = BeautifulSoup(entry.summary, "lxml").get_text(" ", strip=True)[:200]
 
+            title = entry.get("title", "（タイトルなし）")
+            if not match_keywords(title + summary, keywords):
+                continue
             events.append({
-                "title": entry.get("title", "（タイトルなし）"),
+                "title": title,
                 "date_start": published.isoformat() if published else None,
                 "date_end": None,
                 "description": summary,

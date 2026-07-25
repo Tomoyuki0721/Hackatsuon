@@ -159,6 +159,7 @@
     display: flex;
     align-items: center;
     gap: 0.35rem;
+    flex-wrap: wrap;
   }
   .card-date .soon {
     background: #fff3cd;
@@ -219,10 +220,9 @@
 </header>
 
 <div class="filter-bar">
-  <div class="tab active" data-filter="week">今週</div>
-  <div class="tab" data-filter="next">来週</div>
-  <div class="tab" data-filter="month">今月</div>
-  <div class="tab" data-filter="all">すべて</div>
+  <div class="tab active" data-filter="all">すべて</div>
+  <div class="tab" data-filter="month">今月掲載</div>
+  <div class="tab" data-filter="week">今週掲載</div>
 </div>
 
 <main>
@@ -310,7 +310,7 @@
             <span class="source-dot"></span>${escHtml(ev.source)}
           </div>
           <div class="card-title">${escHtml(ev.title)}</div>
-          <div class="card-date">${escHtml(dateStr)}${escHtml(endStr)} ${soonTag}</div>
+          <div class="card-date">掲載日: ${escHtml(dateStr)}${escHtml(endStr)} ${soonTag}</div>
           ${desc}
         </div>
         <div class="card-arrow">›</div>
@@ -363,7 +363,7 @@
 
     const events = Array.isArray(data.events) ? data.events : [];
 
-    let currentFilter = 'week';
+    let currentFilter = 'all';
 
     document.querySelectorAll('.tab').forEach(tab => {
       tab.addEventListener('click', () => {
