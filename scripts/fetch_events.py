@@ -21,7 +21,7 @@ SCRIPT_DIR = Path(__file__).parent
 ROOT_DIR = SCRIPT_DIR.parent
 CONFIG_PATH = ROOT_DIR / "config" / "sites.json"
 OUTPUT_PATH = ROOT_DIR / "data" / "events.json"
-LOOKBACK_DAYS = 30   # 過去30日以内に投稿された記事を表示
+LOOKBACK_DAYS = 60   # 過去60日以内に投稿された記事を表示
 LOOKAHEAD_DAYS = 60  # 未来60日以内のイベントも表示
 
 # ── 依存ライブラリ（pip install requests beautifulsoup4 lxml feedparser python-dateutil）
