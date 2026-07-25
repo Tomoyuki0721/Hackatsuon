@@ -97,9 +97,17 @@ def match_keywords(text: str, keywords: list[str]) -> bool:
     return any(kw in text for kw in keywords)
 
 
+def exclude_keywords_match(text: str, exclude: list[str]) -> bool:
+    """除外キーワードに1つでも該当したらTrue（除外すべき記事）"""
+    if not exclude:
+        return False
+    return any(kw in text for kw in exclude)
+
+
 def fetch_rss(site: dict) -> list[dict]:
     events = []
     keywords = site.get("keywords", [])
+    exclude = site.get("exclude_keywords", [])
     try:
         feed = feedparser.parse(site["url"])
         for entry in feed.entries:
@@ -116,7 +124,10 @@ def fetch_rss(site: dict) -> list[dict]:
                 summary = BeautifulSoup(entry.summary, "lxml").get_text(" ", strip=True)[:200]
 
             title = entry.get("title", "（タイトルなし）")
-            if not match_keywords(title + summary, keywords):
+            combined = title + summary
+            if not match_keywords(combined, keywords):
+                continue
+            if exclude_keywords_match(combined, exclude):
                 continue
             events.append({
                 "title": title,
