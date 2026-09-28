@@ -1,14 +1,6 @@
 {
-  "updated": "2026-09-21T12:10:22.282715+09:00",
+  "updated": "2026-09-28T12:28:05.431901+09:00",
   "events": [
-    {
-      "title": "令和８年熊本地震災害義援金の受け付け及び緊急支援募金箱の設置について",
-      "date_start": "2026-07-29",
-      "date_end": null,
-      "description": "令和８年７月２８日（火）午後４時２７分頃に熊本県熊本地方で発生した地震により熊本県に甚大な被害が発生しています […]",
-      "url": "https://kesennuma-shakyo.jp/news/%e4%bb%a4%e5%92%8c%ef%bc%98%e5%b9%b4%e7%86%8a%e6%9c%ac%e5%9c%b0%e9%9c%87%e7%81%bd%e5%ae%b3%e7%be%a9%e6%8f%b4%e9%87%91%e3%81%ae%e5%8f%97%e3%81%91%e4%bb%98%e3%81%91%e5%8f%8a%e3%81%b3%e7%b7%8a%e6%80%a5/",
-      "source": "気仙沼市社会福祉協議会"
-    },
     {
       "title": "自己評価結果（児童発達支援、放課後デイサービス、保育所等訪問支援）の公表について",
       "date_start": "2026-07-30",
@@ -47,31 +39,7 @@
       "date_end": null,
       "description": "",
       "url": "https://www.kesennuma.miyagi.jp/sec/s084/020/010/010/020/20190826095137.html",
-      "source": "気仙沼市（新着情報）"
-    },
-    {
-      "title": "気仙沼市観光誘客イベント補助金（旧：気仙沼市観光魅力創造補助金）の募集について",
-      "date_start": "2026-09-02",
-      "date_end": null,
-      "description": "",
-      "url": "https://www.kesennuma.miyagi.jp/sec/s084/020/010/010/020/20190826095137.html",
       "source": "気仙沼市（注目情報）"
-    },
-    {
-      "title": "令和8年度第2回気仙沼市サステナブルシティ推進事業補助金の募集について",
-      "date_start": "2026-09-04",
-      "date_end": null,
-      "description": "",
-      "url": "https://www.kesennuma.miyagi.jp/sec/s019/020/020/050/20260825143005.html",
-      "source": "気仙沼市（新着情報）"
-    },
-    {
-      "title": "令和8年度「気仙沼市ジェンダーギャップ解消プロジェクト第2回経営者向けセミナー」の開催について",
-      "date_start": "2026-09-04",
-      "date_end": null,
-      "description": "",
-      "url": "https://www.kesennuma.miyagi.jp/sec/s020/020/020/060/20260805095020.html",
-      "source": "気仙沼市（新着情報）"
     },
     {
       "title": "令和8年度第2回気仙沼市サステナブルシティ推進事業補助金の募集について",
@@ -88,30 +56,6 @@
       "description": "",
       "url": "https://www.kesennuma.miyagi.jp/sec/s020/020/020/060/20260805095020.html",
       "source": "気仙沼市（注目情報）"
-    },
-    {
-      "title": "大島グリーンマルシェ",
-      "date_start": "2026-09-04",
-      "date_end": null,
-      "description": "気仙沼大島ウェルカム・ターミナルにて、「大島グリーンマルシェ」を毎週日曜に開催いたします！ 新鮮野菜、海産物、旬のフルーツ、島のお惣菜、キムチ、スイーツ、大島産ハーブ、手工芸品などの販売や、スマホ無料相談コーナーなどもあ […] The post 大島グリーンマルシェ first appeared on 【公式】気仙沼の観光情報サイト|気仙沼さ来てけらいん .",
-      "url": "https://kesennuma-kanko.jp/oshima-greenmarche09/",
-      "source": "気仙沼さ来てけらいん"
-    },
-    {
-      "title": "島のハイハイレース",
-      "date_start": "2026-09-06",
-      "date_end": null,
-      "description": "気仙沼大島ウェルカム・ターミナルにて「島のハイハイレース」が開催されます！ 赤ちゃんがハイハイで、スタートからゴールまで、3メートルの道のりを2分でたどり着けるのか？ がんばったお子さまには参加認定証が贈られます！ お申 […] The post 島のハイハイレース first appeared on 【公式】気仙沼の観光情報サイト|気仙沼さ来てけらいん .",
-      "url": "https://kesennuma-kanko.jp/haihai-race09/",
-      "source": "気仙沼さ来てけらいん"
-    },
-    {
-      "title": "沼れ！けせんぬま周遊ラリー",
-      "date_start": "2026-09-08",
-      "date_end": null,
-      "description": "紙のマップを片手に巡るデジタルスタンプラリー 「沼れ！けせんぬま周遊ラリー」は、気仙沼クルーシップアプリを使って楽しむデジタルスタンプラリーです。 参加には「気仙沼クルーシップアプリ」「紙のマップ」が必要です。 楽しみ方 […] The post 沼れ！けせんぬま周遊ラリー first appeared on 【公式】気仙沼の観光情報サイト|気仙沼さ来てけらいん .",
-      "url": "https://kesennuma-kanko.jp/2026numarekesennuma/",
-      "source": "気仙沼さ来てけらいん"
     },
     {
       "title": "令和８年８月大雨災害義援金の受付について",
@@ -120,14 +64,6 @@
       "description": "令和７年８月の大雨により被災された方々を支援するため、各被災県の共同募金会では義援金を受け付けております。 そ […]",
       "url": "https://kesennuma-shakyo.jp/news/%e4%bb%a4%e5%92%8c%ef%bc%98%e5%b9%b4%ef%bc%98%e6%9c%88%e5%a4%a7%e9%9b%a8%e7%81%bd%e5%ae%b3%e7%be%a9%e6%8f%b4%e9%87%91%e3%81%ae%e5%8f%97%e4%bb%98%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6/",
       "source": "気仙沼市社会福祉協議会"
-    },
-    {
-      "title": "【産業祭り特別版サメサメサメツアー（ガイドツアー）】",
-      "date_start": "2026-09-10",
-      "date_end": null,
-      "description": "気仙沼産業まつり限定プラン 港町を堪能しよう！ 海の市、漁師が集う店、サメの加工場、そして地域に根ざすお菓子屋さん。 気仙沼の港町を舞台に、海とともに歩んできた人々の現場と仕事のこだわりに迫る特別ツアーです。 本プランは […] The post 【産業祭り特別版サメサメサメツアー（ガイドツアー）】 first appeared on 【公式】気仙沼の観光情報サイト|気仙沼さ来てけらいん .",
-      "url": "https://kesennuma-kanko.jp/samegaidotua/",
-      "source": "気仙沼さ来てけらいん"
     },
     {
       "title": "ガス上下水道料金徴収等包括業務に係る公募型プロポーザルを実施します（参加申込書の受付は終了しました）",
@@ -199,6 +135,46 @@
       "date_end": null,
       "description": "2026年9月19日(土)更新情報 ※随時情報を公開いたします。 ホヤぼーやと一緒に楽しもう！ 気仙沼市の観光キャラクター「海の子　ホヤぼーや」のファンイベント「あったげホヤぼーや2026」が今年も開催決定★今年はハロウ […] The post あったげホヤぼーや2026 first appeared on 【公式】気仙沼の観光情報サイト|気仙沼さ来てけらいん .",
       "url": "https://kesennuma-kanko.jp/attagehoyaboya2026/",
+      "source": "気仙沼さ来てけらいん"
+    },
+    {
+      "title": "Kesennuma Street Live Festival",
+      "date_start": "2026-09-24",
+      "date_end": null,
+      "description": "「南町海岸公園・紫神社前商店街」を会場に、今年も「Kesennuma Street Live Festival」が開催されます！ 今回が14回目の開催となる本イベント。入場無料で開催されます。 ※出演者や最新のタイムテー […] The post Kesennuma Street Live Festival first appeared on 【公式】気仙沼の観光情報サイト|気仙沼さ来てけらいん ",
+      "url": "https://kesennuma-kanko.jp/kesennuma-street-live-festival2026/",
+      "source": "気仙沼さ来てけらいん"
+    },
+    {
+      "title": "気仙沼市エコフェスタ2026を開催します！",
+      "date_start": "2026-09-25",
+      "date_end": null,
+      "description": "",
+      "url": "https://www.kesennuma.miyagi.jp/sec/s028/020/010/010/010/20260903174650.html",
+      "source": "気仙沼市（新着情報）"
+    },
+    {
+      "title": "気仙沼市エコフェスタ2026を開催します！",
+      "date_start": "2026-09-25",
+      "date_end": null,
+      "description": "",
+      "url": "https://www.kesennuma.miyagi.jp/sec/s028/020/010/010/010/20260903174650.html",
+      "source": "気仙沼市（注目情報）"
+    },
+    {
+      "title": "ART EXHIBITION2026 「創る 表現の往還」",
+      "date_start": "2026-09-25",
+      "date_end": null,
+      "description": "地震や津波を経験した地域、そしてそこに関わってきた人々が、それぞれの感性と表現を持ち寄る展覧会です。 さまざまな作品の展示に加え、誰もが気軽に楽しめるワークショップも開催されます。 作品を観ることも、手を動かして創ること […] The post ART EXHIBITION2026 「創る 表現の往還」 first appeared on 【公式】気仙沼の観光情報サイト|気仙沼さ来てけらいん .",
+      "url": "https://kesennuma-kanko.jp/artexhibition2026_tsukuru/",
+      "source": "気仙沼さ来てけらいん"
+    },
+    {
+      "title": "ホヤぼーやスタンプラリー2026",
+      "date_start": "2026-09-25",
+      "date_end": null,
+      "description": "※クロスワードの回答、スタンプＱＲが読み込めるようになるのは2026年10月1日からです。 【開催期間】2026年10月1日（木）〜 2027年2月28日（日） 今回のスタンプラリーは、ホヤぼーやと一緒に気仙沼の街をめぐ […] The post ホヤぼーやスタンプラリー2026 first appeared on 【公式】気仙沼の観光情報サイト|気仙沼さ来てけらいん .",
+      "url": "https://kesennuma-kanko.jp/hoyaboyastamprally2026/",
       "source": "気仙沼さ来てけらいん"
     }
   ]
